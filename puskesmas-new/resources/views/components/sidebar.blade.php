@@ -54,7 +54,7 @@
 
           <li class="nav-item">
             <a href="dashboard/kelurahan" class="nav-link">
-              <i class="nav-icon fas fa-copy"></i>
+              <i class="nav-icon fas fa-chart-pie"></i>
               <p>
                 Kelurahan
                 <span class="right badge badge-danger">New</span>
