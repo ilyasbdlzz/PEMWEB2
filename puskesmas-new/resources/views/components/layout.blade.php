@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>AdminLTE 3 | Blank Page</title>
+  <title>Project Laravel Puskesmas-New</title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -20,7 +20,7 @@
   <!-- /.navbar -->
 
   <!-- Main Sidebar Container -->
- @include('components.sidebar')
+  @include('components.sidebar')
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
@@ -47,7 +47,7 @@
       <!-- Default box -->
       <div class="card">
         <div class="card-header">
-          <h3 class="card-title">Title</h3>
+          <h3 class="card-title">{{ $page_title }}</h3>
 
           <div class="card-tools">
             <button type="button" class="btn btn-tool" data-card-widget="collapse" title="Collapse">
@@ -63,7 +63,9 @@
         </div>
         <!-- /.card-body -->
         <div class="card-footer">
-          Footer
+          <p>
+          Informasi ini bersifat ekskelusif!
+          </p>
         </div>
         <!-- /.card-footer-->
       </div>

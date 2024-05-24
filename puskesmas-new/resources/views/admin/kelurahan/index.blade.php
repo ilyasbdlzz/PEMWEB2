@@ -1,5 +1,6 @@
 <x-layout>
     <x-slot name="page_name">Halaman Kelurahan</x-slot>
+    <x-slot name="page_title"> List Data Kelurahan</x-slot>
     <x-slot name="page_content">
         <table class="table table-bordered">
             <tr class="table-success">
