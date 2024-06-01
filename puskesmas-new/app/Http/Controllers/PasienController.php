@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Pasien;
+use App\Models\Kelurahan;
 
 class PasienController extends Controller
 {
@@ -22,7 +23,8 @@ class PasienController extends Controller
      */
     public function create()
     {
-        return view ('admin.pasien.create');
+        $kelurahans = Kelurahan::all();
+        return view('admin.pasien.create', compact('kelurahans'));
     }
 
     /**

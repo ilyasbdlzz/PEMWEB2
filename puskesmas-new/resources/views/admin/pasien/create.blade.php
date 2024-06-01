@@ -62,8 +62,12 @@
             <div class="form-group row">
                 <label for="kel_nama" class="col-sm-4 col-form-label">Faskes Kelurahan</label>
                 <div class="col-sm-8">
-                    <input type="text" class="form-control" id="kel_nama" name="kel_nama"
-                        placeholder="Faskes Kelurahan">
+                    <select class="form-control" id="kel_nama" name="kel_nama">
+                        <option value="">Pilih Kelurahan</option>
+                        @foreach($kelurahans as $kelurahan)
+                            <option value="{{ $kelurahan->nama }}">{{ $kelurahan->nama }}</option>
+                        @endforeach
+                    </select>
                 </div>
             </div>
             <div class="form-group row">
