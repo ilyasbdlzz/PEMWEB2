@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot name="page_name">Halaman Kelurahan / Create</x-slot>
-    <x-slot name="page_title">Contact us now!</x-slot>
+    <x-slot name="page_title">Daftarkan Kelurahan anda sebagai Mitra kami</x-slot>
         <x-slot name="page_content">
             <form class="forms-sample" action="{{url ('dashboard/kelurahan/store')}}" method="post">
             @csrf

@@ -15,9 +15,11 @@
                     <td>{{ $kelurahan->id }}</td>
                     <td>{{ $kelurahan->nama }}</td>
                     <td>{{ $kelurahan->kecamatan_nama }}</td>
-                    <td><a href="{{url ('dashboard/kelurahan/show', $kelurahan->id)}}" class="text-primary"><i class="far fa-eye"></i> Lihat</a> |
+                    <td>
+                        <a href="{{url ('dashboard/kelurahan/show', $kelurahan->id)}}" class="text-primary"><i class="far fa-eye"></i> Lihat</a> |
                         <a href="{{url ('dashboard/kelurahan/')}}" class="text-warning"><i class="far fa-edit"></i> Edit</a> |
-                        <a href="#" class="text-danger"><i class="far fa-trash-alt"></i> Hapus</a></td>
+                        <a href="#" class="text-danger"><i class="far fa-trash-alt"></i> Hapus</a>
+                    </td>
                 </tr>
             @endforeach
         </table>

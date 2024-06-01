@@ -1,9 +1,9 @@
 <x-layout>
-    <x-slot name="page_name">Detail Pasien</x-slot>
-    <x-slot name="page_title">Berikut adalah tampilan Detail Pasien yang dipilih :</x-slot>
+    <x-slot name="page_name">Halaman Kelurahan / Show</x-slot>
+    <x-slot name="page_title">Berikut adalah tampilan Detail Kelurahan yang dipilih :</x-slot>
         <x-slot name="page_content">
                 <table class="table table-bordered ">
-                    <tr class="table-danger">
+                    <tr class="table-warning">
                         <th>No</th>
                         <th>ID</th>
                         <th>Nama Kelurahan</th>
