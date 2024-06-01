@@ -11,3 +11,4 @@ class Kelurahan extends Model
 
     protected $fillable = ['nama', 'kecamatan_nama'];
 }
+ 

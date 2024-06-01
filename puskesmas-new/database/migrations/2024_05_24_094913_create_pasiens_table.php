@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('email');
             $table->text('alamat');
             $table->string('kel_nama');
-            $table->timestamps();
+            $table->timestamps();  
         });
     }
 
