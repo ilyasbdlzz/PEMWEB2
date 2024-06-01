@@ -12,4 +12,6 @@ class Pasien extends Model
     protected $fillable = ['kode','nama', 'tmp_lahir','tgl_lahir','alamat','gender',
     'email','alamat','kel_nama'];
 
+    protected $table = 'pasiens';
+
 }

@@ -43,6 +43,15 @@
             </a>
           </li>
           <li class="nav-item">
+            <a href="{{url ('dashboard/kelurahan')}}" class="nav-link">
+              <i class="nav-icon fas fa-chart-pie"></i>
+              <p>
+                Kelurahan
+                <span class="right badge badge-danger">New</span>
+              </p>
+            </a>
+          </li>
+          <li class="nav-item">
             <a href="{{url ('dashboard/pasien')}}" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
@@ -52,15 +61,6 @@
             </a>
           </li>
 
-          <li class="nav-item">
-            <a href="{{url ('dashboard/kelurahan')}}" class="nav-link">
-              <i class="nav-icon fas fa-chart-pie"></i>
-              <p>
-                Kelurahan
-                <span class="right badge badge-danger">New</span>
-              </p>
-            </a>
-          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->
