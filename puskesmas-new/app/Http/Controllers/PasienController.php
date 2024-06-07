@@ -39,7 +39,7 @@ class PasienController extends Controller
             'tgl_lahir' => 'required|date',
             'tmp_lahir' => 'required|string',
             'gender' => 'required|string|in:L,P',           
-            'email' => 'required|email',
+            'email' => 'required|email', 
             'alamat' => 'required|string',
             'kel_nama' => 'required|string'
         ]);

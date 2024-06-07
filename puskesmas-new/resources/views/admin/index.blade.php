@@ -10,7 +10,7 @@
                         <p>Kelurahan</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-bag"></i>
+                        <i class="ion ion-pie-graph"></i>
                     </div>
                     <a href="{{url ('dashboard/kelurahan')}}" class="small-box-footer">Lihat data kelurahan <i
                             class="fas fa-arrow-circle-right"></i></a>
@@ -51,7 +51,7 @@
                         <p>(Data Kosong)</p>
                     </div>
                     <div class="icon">
-                        <i class="ion ion-pie-graph"></i>
+                        <i class="ion ion-bag"></i>
                     </div>
                     <a href="#" class="small-box-footer">More info <i class="fas fa-arrow-circle-right"></i></a>
                 </div>
