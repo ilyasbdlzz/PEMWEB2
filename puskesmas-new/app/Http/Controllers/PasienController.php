@@ -46,7 +46,7 @@ class PasienController extends Controller
 
         //menyimpan
         Pasien::create($validated);
-        return redirect ('dashboard/pasien');
+        return redirect ('dashboard/pasien')->with('pesan','Data has been created');
     }
 
     /**
@@ -63,7 +63,9 @@ class PasienController extends Controller
      */
     public function edit(string $id)
     {
-        //
+        $pasien = Pasien::find($id);
+        $kelurahans = Kelurahan::all();
+        return view ('admin.pasien.edit', compact ('kelurahans','pasien'));
     }
 
     /**
@@ -71,7 +73,22 @@ class PasienController extends Controller
      */
     public function update(Request $request, string $id)
     {
-        //
+        //validasi form input
+        $validated = $request->validate([
+            'kode' => 'required|string',
+            'nama' => 'required|string',
+            'tgl_lahir' => 'required|date',
+            'tmp_lahir' => 'required|string',
+            'gender' => 'required|string|in:L,P',           
+            'email' => 'required|email', 
+            'alamat' => 'required|string',
+            'kel_nama' => 'required|string'
+        ]);
+
+        $pasien = Pasien::find($id);
+        $pasien->update($validated);
+
+        return redirect ('dashboard/pasien')->with('update','Data has been updated');
     }
 
     /**
@@ -79,6 +96,9 @@ class PasienController extends Controller
      */
     public function destroy(string $id)
     {
-        //
+        $pasien = Pasien::find($id);
+        $pasien->delete();
+        
+        return redirect ('dashboard/pasien')->with('delete','Data has been deleted');
     }
 }

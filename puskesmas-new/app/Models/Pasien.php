@@ -10,7 +10,7 @@ class Pasien extends Model
     use HasFactory;
 
     protected $fillable = ['kode','nama', 'tmp_lahir','tgl_lahir','alamat','gender',
-    'email','alamat','kel_nama'];
+    'email','alamat','kel_nama','created_at', 'updated_at'];
 
     protected $table = 'pasiens';
 

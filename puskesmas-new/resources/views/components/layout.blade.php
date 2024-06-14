@@ -19,6 +19,9 @@
 <body class="hold-transition sidebar-mini">
 <!-- Site wrapper -->
 <div class="wrapper">
+  <div class="preloader flex-column justify-content-center align-items-center">
+    <img class="animation__shake" style="border-radius :100%" src="{{asset('admin/dist/img/ilyaswibu.jpg')}}" alt="Foto Ilyas" height="150" width="150">
+  </div>
   <!-- Navbar -->
   @include('components.navbar')
   <!-- /.navbar -->

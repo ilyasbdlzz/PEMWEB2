@@ -44,10 +44,10 @@
                     <td>
                         <a href="{{url ('dashboard/kelurahan/show', $kelurahan->id)}}" class="btn btn-primary"><i class="far fa-eye"></i> Lihat</a> |
                         <a href="{{url ('dashboard/kelurahan/edit', $kelurahan->id)}}" class="btn btn-warning"><i class="far fa-edit"></i> Edit</a> |
-                        <form action="{{url ('dashboard/kelurahan/destroy', $kelurahan->id)}}" method="post" class="d-inline">
+                        <form action="{{url ('dashboard/kelurahan/destroy', $kelurahan->id)}}" method="POST" class="d-inline">
                             @csrf
                             @method('delete')
-                            <button onclick="return confirm ('Apakah anda yakin ingin menghapus data?')" type="submit" class="btn btn-danger"><i class="far fa-trash-alt"></i>Hapus</button>
+                            <button onclick="return confirm ('Apakah anda yakin ingin menghapus data?')" type="submit" class="btn btn-danger"> <i class="far fa-trash-alt"></i>Hapus </button>
                         </form>
                     </td>
                 </tr>

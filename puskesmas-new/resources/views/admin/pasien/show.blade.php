@@ -23,7 +23,7 @@
                         <td>{{ $pasien->tmp_lahir }}</td>
                         <td>{{ $pasien->tgl_lahir }}</td>
                         <td>{{ $pasien->gender }}</td>
-                        <td>{{ $pasien-> email}}</td>
+                        <td>{{ $pasien->email}}</td>
                         <td>{{ $pasien->alamat }}</td>
                         <td>{{ $pasien->kel_nama }}</td>
                         <td>{{ $pasien->created_at }}</td>

@@ -34,20 +34,36 @@
         <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
           <!-- Add icons to the links using the .nav-icon class
               with font-awesome or any other icon font library -->
-          <li class="nav-item">
-            <a href="{{url ('/dashboard')}}" class="nav-link">
+          <li class="nav-item menu-open">
+            <a href="{{url ('/dashboard')}}" class="nav-link active">
               <i class="nav-icon fas fa-tachometer-alt"></i>
               <p>
                 Dashboard
+                <i class="right fas fa-angle-left"></i>
               </p>
             </a>
+            <ul class="nav nav-treeview">
+              <li class="nav-item">
+                <a href="{{url ('dashboard/kelurahan')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Kelurahan</p>
+                </a>
+              </li>
+              <li class="nav-item">
+                <a href="{{url ('dashboard/pasien')}}" class="nav-link">
+                  <i class="far fa-circle nav-icon"></i>
+                  <p>Pasien
+                    <span class="right badge badge-danger">New</span>
+                  </p>
+                </a>
+              </li>
+            </ul>
           </li>
           <li class="nav-item">
             <a href="{{url ('dashboard/kelurahan')}}" class="nav-link">
               <i class="nav-icon fas fa-chart-pie"></i>
               <p>
-                Kelurahan
-                <span class="right badge badge-danger">New</span>
+                Log Out
               </p>
             </a>
           </li>
@@ -55,8 +71,7 @@
             <a href="{{url ('dashboard/pasien')}}" class="nav-link">
               <i class="nav-icon fas fa-copy"></i>
               <p>
-                Pasien
-                <span class="right badge badge-danger">New</span>
+                Ganti Akun
               </p>
             </a>
           </li>
