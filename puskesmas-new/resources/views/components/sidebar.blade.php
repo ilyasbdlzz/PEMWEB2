@@ -1,3 +1,4 @@
+@use (App\Models\User)
 <aside class="main-sidebar sidebar-dark-primary elevation-4">
     <!-- Brand Logo -->
     <a href="dashboard" class="brand-link">
@@ -13,7 +14,8 @@
           <img src="{{asset ('admin/dist/img/ilyaswibu.jpg')}}" class="img-circle elevation-2" alt="gambar ilyas">
         </div>
         <div class="info">
-          <a href="#" class="d-block">Ilyas Abdul Aziz</a>
+          <a href="#" class="d-block">{{ Auth::user()->name}}</a>
+          <span class="text-primary">Role : {{ Auth::user ()->role }}</span>
         </div>
       </div>
 
@@ -49,14 +51,18 @@
                   <p>Kelurahan</p>
                 </a>
               </li>
-              <li class="nav-item">
-                <a href="{{url ('dashboard/pasien')}}" class="nav-link">
-                  <i class="far fa-circle nav-icon"></i>
-                  <p>Pasien
-                    <span class="right badge badge-danger">New</span>
-                  </p>
-                </a>
+              @auth
+                @if (Auth::user()->role == User::ROLE_ADMIN)
+                <li class="nav-item">
+                  <a href="{{url ('dashboard/pasien')}}" class="nav-link">
+                    <i class="far fa-circle nav-icon"></i>
+                    <p>Pasien
+                      <span class="right badge badge-danger">New</span>
+                    </p>
+                  </a>
+                @endif
               </li>
+              @endauth
             </ul>
           </li>
           <li class="nav-item">
